@@ -1,20 +1,24 @@
 # 175. Combine Two Tables
 
 **Difficulty:** Easy  
-**Topic:** SQL JOIN
+**Topics:** SQL, JOIN
 
-## Problem  
-Given two tables, `Person` and `Address`, return each person’s `firstName`, `lastName`, `city`, and `state`.  
-If a person has no matching `Address` row, `city` and `state` should be `NULL`.
+---
 
-## Approach  
-- Use a **LEFT JOIN** from `Person` to `Address` on `personId`.  
-- SELECT the four columns, relying on the fact that missing `Address` rows yield `NULL` for `city`/`state`.
+## Problem
+Given tables `Person` and `Address`, return each person’s `firstName`, `lastName`, `city`, and `state`.  
+If a person has no address row, `city` and `state` should be `NULL`.
 
-## SQL  
-```sql
-SELECT
-  p.firstName, p.lastName, a.city, a.state
-FROM Person AS p
-LEFT JOIN Address AS a
-  ON p.personId = a.personId;
+---
+
+## Approach
+- Perform a **LEFT JOIN** from `Person` to `Address` on `personId`.  
+- Selecting `a.city` and `a.state` will naturally yield `NULL` for missing addresses.
+
+---
+
+## Edge Cases
+1. **No rows in `Address`** -> all outputs for `city`/`state` are `NULL`.  
+2. **Address rows exist for non-existent `personId`** -> ignored by LEFT JOIN.  
+3. **`city` or `state` columns already `NULL`** in the DB -> remain `NULL` in results.
+
