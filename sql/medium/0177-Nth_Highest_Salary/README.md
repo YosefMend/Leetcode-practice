@@ -35,7 +35,11 @@ Given an `Employee` table with columns `id` and `salary`, write a query to find 
 ---
 
 ## Solution  
+
+In `solution.sql`, alias the result column as `getNthHighestSalary(n)` (e.g. ``AS `getNthHighestSalary(2)` `` when n = 2).
+
 See [`solution.sql`](./solution.sql) for the full query.
+
 
 ---
 
