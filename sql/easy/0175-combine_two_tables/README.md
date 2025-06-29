@@ -1,6 +1,6 @@
 # 175. Combine Two Tables
 
-** Leetcode URL:** https://leetcode.com/problems/combine-two-tables/
+** Leetcode URL:** https://leetcode.com/problems/combine-two-tables
 **Difficulty:** Easy  
 **Topics:** SQL, JOIN
 
