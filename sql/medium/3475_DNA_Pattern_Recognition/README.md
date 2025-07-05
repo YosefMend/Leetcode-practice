@@ -42,9 +42,9 @@ Return all columns plus the four flags, ordered by `sample_id`.
 
 ## Solution  
 In `solution.sql`, implement each flag with `CASE WHEN … LIKE …` logic.  
-See `solution.sql` for the full query.
+See [`solution.sql`](./solution.sql) for the full query.
 
 ---
 
 ## Tests  
-See `tests.sql` for sample DDL/DML setup and expected outputs covering various pattern combinations.  
+See [`tests.sql`](./tests.sql) for sample DDL/DML setup and expected outputs covering various pattern combinations.  
