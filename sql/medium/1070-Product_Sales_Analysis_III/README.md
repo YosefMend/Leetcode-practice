@@ -42,9 +42,9 @@ We only need the earliest year per product, then every sale row that matches tha
 
 ## Solution  
 In `solution.sql` implement either the CTE+JOIN approach or the window-function variant. Alias the earliest year as `first_year` so the output columns match the prompt.  
-See `solution.sql` for the full query.
+See [solution.sql](solution.sql) for the full query.
 
 ---
 
 ## Tests  
-See `tests.sql` for sample DDL/DML setups and expected outputs covering products with single/multiple sales in their first year.
+See [tests.sql](tests.sql) for sample DDL/DML setups and expected outputs covering products with single/multiple sales in their first year.
