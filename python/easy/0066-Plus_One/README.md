@@ -1,4 +1,4 @@
-# 066. Plus One — O(n) Time, O(1) Space (Right-to-Left Carry)
+# 066. Plus One — Right-to-Left Carry
 
 **LeetCode URL:** https://leetcode.com/problems/plus-one/  
 **Difficulty:** Easy  
